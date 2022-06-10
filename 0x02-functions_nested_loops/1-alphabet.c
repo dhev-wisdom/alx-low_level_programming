@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdio.h>
+
 
 /**
- * print_alphabet - Entry point
+ * print_alphabet - Print lowercase alphabet
  *
- * Return: ALways 0.
+ * Return: Nothing
  */
-void print_alphabet(int n)
+void print_alphabet(void)
 {
-	while(n <= 'z')
+	char n; /*Declaration Statement*/
+
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		putchar(n);
-		n++;
+		_putchar(n);
 	}
-	printf('\n');
-	return (0);
+	_putchar('\n');
 }
