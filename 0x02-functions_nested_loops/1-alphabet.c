@@ -1,18 +1,18 @@
 #include "main.h"
-/**
- * main - chech the code
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	int x;
+#include <stdio.h>
 
-	while (x <= 'z')
+/**
+ * print_alphabet - Entry point
+ *
+ * Return: ALways 0.
+ */
+void print_alphabet(int n)
+{
+	while(n <= 'z')
 	{
-		putchar(x);
-		x++;
+		putchar(n);
+		n++;
 	}
-	putchar('\n');
+	printf('\n');
 	return (0);
 }
