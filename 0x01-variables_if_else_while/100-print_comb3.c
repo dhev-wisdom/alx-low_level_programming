@@ -8,27 +8,20 @@ int main(void)
 {
 	int x,y;
 
-	x = '1';
-	while (x < '100')
+	for (x = 0; x <= 8; x++)
 	{
-		if (x < '10')
+		for (y = x + 1; y <= 9; y++)	
 		{
-			x = '0' + x;
 			putchar(x);
+			putchar(y);
+			if (x == 8 && y == 9)
+				continue;
 			putchar(',');
 			putchar(' ');
+			
 		}
-		else if (x >= '10')
-		{
-			if (x !combo already exists)
-			{
-				putchar(x);
-			}
-			else
-			{
-				break;
-			}
-		}
-		putchar('\n');
-		return (0);
+	}
+	putchar('\n');
+
+	return (0);
 }
