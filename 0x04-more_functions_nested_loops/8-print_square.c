@@ -10,14 +10,16 @@ void print_square(int size)
 
 	if (size > 0)
 	{
+
 		for (hgt = 0; hgt < size; hgt++)
 		{
+
 			for (wdt = 0; wdt < size; wdt++);
 			{
 				_putchar('#');
 			}
 
-			if (hgt == size -1)
+			if (hgt == size - 1)
 			{
 				continue;
 			}
