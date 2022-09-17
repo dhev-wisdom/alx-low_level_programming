@@ -13,7 +13,7 @@ int main(void)
 
 	while (div < (prime / 2))
 	{
-		if((prime % 2) == 0)
+		if ((prime % 2) == 0)
 		{
 			prime /= 2;
 			continue;
