@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_diagonal - Draw a diagonal linne in the terminal
+ * print_diagonal - Draw a diagonal line in the terminal
+ * @n: The number of \ characters to be printed
  */
 
 void print_diagonal(int n)
