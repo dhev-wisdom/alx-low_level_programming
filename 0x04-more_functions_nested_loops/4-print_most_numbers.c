@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - Prints the numbers 1 - 14 ten times
+ * print_most_numbers - Prints the numbers 1 - 14 ten times
  */
 
 void print_most_numbers(void)
@@ -14,5 +14,4 @@ void print_most_numbers(void)
 			_putchar((num % 10) + '0');
 	}
 	_putchar('\n');
-
 }
