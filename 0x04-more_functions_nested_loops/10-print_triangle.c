@@ -2,6 +2,7 @@
 
 /**
  * print_triangle - Prints a triangle followed by a new line
+ * @size: The size of the triangle
  */
 
 void print_triangle(int size)
@@ -10,9 +11,9 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (hash = 0; hash <= size; hash++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (index = size - hash; index > 0; index++)
+			for (index = size - hash; index > 0; index--)
 			{
 				_putchar(' ');
 			}
