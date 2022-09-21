@@ -4,7 +4,7 @@
  * print_triangle - Prints a triangle followed by a new line
  */
 
-void print_triangle(void)
+void print_triangle(int size)
 {
 	int hash, index;
 
