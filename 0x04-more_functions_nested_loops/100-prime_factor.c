@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -28,8 +27,8 @@ int main(void)
 			}
 		}
 	}
-	_putchar(prime);
-	_putchar('\n');
+	
+	printf("%ld\n", prime);
 
 	return (0);
 }
