@@ -25,6 +25,15 @@ char *cap_string(char *str)
 			{
 				i++;
 			}
+
+			int k;
+			for (k = 0; delimeters[k]; k++)
+			{
+				if (str[i] == delimeters[k])
+				{
+					i++;
+				}
+			}
 		}
 	}
 
