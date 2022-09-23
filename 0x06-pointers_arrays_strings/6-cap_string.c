@@ -21,7 +21,7 @@ char *cap_string(char *str)
 
 		for (j = 0; delimeters[j]; j++)
 		{
-			if (str[i] = delimeters[j])
+			if (str[i] == delimeters[j])
 			{
 				i++;
 			}
