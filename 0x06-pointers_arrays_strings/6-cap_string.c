@@ -10,7 +10,7 @@
 char *cap_string(char *str)
 {
 	char delimeters[] = " \t\n,;.!?\"(){}";
-	int i = 0, j, k;
+	int i = 0, j;
 
 	for (; str[i]; i++)
 	{
@@ -24,14 +24,6 @@ char *cap_string(char *str)
 			if (str[i] == delimeters[j])
 			{
 				i++;
-			}
-
-			for (k = 0; delimeters[k]; k++)
-			{
-				if (str[i] == delimeters[k])
-				{
-					i++;
-				}
 			}
 		}
 	}
