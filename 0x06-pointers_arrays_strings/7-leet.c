@@ -1,4 +1,4 @@
-#include "nain.h"
+#include "main.h"
 
 /**
  * leet - Encodes a string to 1337
@@ -9,18 +9,20 @@
 
 char *leet(char *str)
 {
-	int index1 = 0, index2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
+	char lower[] = "aeotl";
+	char upper[] = "AEOTL";
+	char num[] = "43071";
 
-	while (str[index1])
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (index2 = 0; index2 <= 7; index2++)
+		for (j = 0; lower[j] != '\0'; j++)
 		{
-			if (str[index1] == leet[index2] || 
-			str[index1] - 32 == leet[index2])
-				str[index1] = index2 + '0';
+			if (str[i] == lower[j] || str[i] == upper[j])
+			{
+				str[i] = num[j];
+			}
 		}
-		index1++;
 	}
 
 	return (str);
