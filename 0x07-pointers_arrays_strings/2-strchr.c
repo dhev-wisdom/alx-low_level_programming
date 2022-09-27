@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * _strchr - search for a character in a string
+ * @s: he string to be checked
+ * @c: The character to be returned
+ *
+ * Return: c
+ */
+
+char *_strchr(char *s, char c)
+{
+	unsigned int i;
+	char result;
+
+	for (i = 0; *(s + i), i++)
+	{
+		if (*(s + i) == c)
+			break;
+	}
+
+	if (*(s + i) == c)
+		return (s + i);
+
+	return ('\0');
+}
