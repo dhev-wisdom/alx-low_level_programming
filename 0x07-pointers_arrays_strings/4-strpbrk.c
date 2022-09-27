@@ -5,6 +5,7 @@
  *
  * @s: The string to be searched
  * @accept: The string to look out for
+ *
  * Return: A pointer to the byte in @s that matches one of the bytes in @accept
  * or NULL if no such byte if found
  */
@@ -21,5 +22,5 @@ char *_strpbrk(char *s, char *accept)
 				return (s + i);
 		}
 	}
-	return (NULL);
+	return (s + 1);
 }
