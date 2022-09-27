@@ -2,7 +2,7 @@
 
 /**
  * _strchr - search for a character in a string
- * @s: he string to be checked
+ * @s: the string to be checked
  * @c: The character to be returned
  *
  * Return: c
