@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_cheeseboard - Function that prints cheeseboard
+ * print_chessboard - Function that prints cheeseboard
  * @a: The array of cheeseboard characters.
  */
 
-void print_cheeseboard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
