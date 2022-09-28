@@ -2,7 +2,9 @@
 
 /**
  * _strlen_recursion - Prints the length of a string
- * @s: The sy=tring to print its length
+ * @s: The string to print its length
+ *
+ * Return: the length of the string @s
  */
 
 int _strlen_recursion(char *s)
