@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *duplicate;
 	int index, len = 0;
 
-	if (str === NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (index = 0; str[index]; index++)
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 		duplicate[index] = str[index];
 	}
 
-	duplicate[leb] = '\0';
+	duplicate[len] = '\0';
 
 	return (duplicate);
 }
