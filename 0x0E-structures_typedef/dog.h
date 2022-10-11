@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
  * struct dog - A new type describing a dog.
@@ -14,6 +14,11 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - Typedef for struct dog.
+ */
+
 typedef struct dog dog_t;
 
 void(struct dog *d, char *name, float age, char *owner);
