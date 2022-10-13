@@ -1,12 +1,13 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
 
 /**
  * print_strings - Prints strings followed by a new line
  * @seperator: The string seperator
  * @n: The quantity of numbers
  * @...: The list of numbers
+ *
+ * Return: Nothing.
  */
 
 void print_strings(const char *seperator, const unsigned int n, ...)
@@ -27,6 +28,5 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 		}
 		putchar('\n');
 		va_end(valist);
-
 	}
 }

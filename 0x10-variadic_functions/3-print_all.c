@@ -4,7 +4,7 @@
 
 /**
  * print_all - Prints chsr, integer, float and string.
- * @format: format/
+ * @format: format
  */
 
 void print_all(const char * const format, ...)
@@ -60,7 +60,6 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		j++;
-
 	}
 	putchar('\n');
 	va_end(list);
