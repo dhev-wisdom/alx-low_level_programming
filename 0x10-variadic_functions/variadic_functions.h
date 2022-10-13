@@ -17,12 +17,12 @@ void print_all(const char * const format, ...);
 typedef struct p
 {
 	char *p;
-	void (*f)(var_list);
+	void (*f)(va_list);
 } checker;
 
-void print_c(var_list);
-void print_i(var_list);
-void print_f(var_list);
-void print_s(var_list);
+void print_c(va_list);
+void print_i(va_list);
+void print_f(va_list);
+void print_s(va_list);
 
 #endif
