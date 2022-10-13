@@ -11,7 +11,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	int sum;
 	unsigned int i;
-	va_list = arguments;
+	va_list arguments;
 
 	if (n)
 	{
@@ -19,7 +19,7 @@ int sum_them_all(const unsigned int n, ...)
 
 		for(i = 0; i < n; i++)
 		{
-			sum += var_arg(arguments, int);
+			sum += va_arg(arguments, int);
 		}
 		
 		va_end(arguments);
