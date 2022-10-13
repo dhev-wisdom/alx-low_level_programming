@@ -1,6 +1,6 @@
-#include "variadi_functions.h"
+#include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarh.h>
+#include <stdarg.h>
 
 /**
  * print_strings - Prints strings followed by a new line
@@ -15,7 +15,7 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 	unsigned int i;
 	char *p;
 
-	va_start(va_list, n);
+	va_start(valist, n);
 
 	for (i = 0; i < n; i++)
 	{
