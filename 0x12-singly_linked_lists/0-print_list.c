@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * print_list - Prints all the the elements of the list_t list
@@ -12,12 +11,17 @@ size_t print_list(const list_t *h)
 {
 	size_t nodes = 0;
 
+	if (!h)
+	{
+		return (nodes);
+	}
+
 	while (h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", h->len, h->stsr);
+			printf("[%u] %s\n", h->len, h->stsr);
 
 		nodes++;
 		h = h->next;
