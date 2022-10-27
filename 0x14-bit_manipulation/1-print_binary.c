@@ -5,7 +5,7 @@
  * @n: the parameter.
  */
 
-void print_number(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	int i, count = 0;
 	unsigned int long current;
