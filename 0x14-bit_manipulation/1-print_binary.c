@@ -10,9 +10,9 @@ void print_number(unsigned long int n)
 	int i, count = 0;
 	unsigned int long current;
 
-	for (i = 63; i <= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
-		current = n >> i;
+		current = (n >> i);
 
 		if (current & i)
 		{
