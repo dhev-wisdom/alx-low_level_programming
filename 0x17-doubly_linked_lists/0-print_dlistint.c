@@ -1,20 +1,28 @@
 #include "lists.h"
 
+/**
+ * print_dlistint - print all nodes in linked list.
+ * h - head of linked list
+ *
+ * Return: Number of nodes in linked list
+ */
+
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t num  = 0;
-	dlistint_t *temp;
-	temp = malloc(sizeof(dlistint_t));
-	temp = h;
+	size_t num = 0;
 
-	if (temp->next != NULL)
+	if (h == NULL)
+	{
+		printf("List is empty\n");
+		return (num);
+	}
+
+	while (h)
 	{
 		num++;
-		printf("%d\n", temp->n);
-		temp = temp->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
-	printf("%d\n", temp->n);
-	num++;
 
 	return (num);
 }
