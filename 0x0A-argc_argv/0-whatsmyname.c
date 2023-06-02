@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - main
- * argc: arguments count
- * argv: arguments list
+ * main - Entry point
+ * @argc: arguments count
+ * @argv: arguments list
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
