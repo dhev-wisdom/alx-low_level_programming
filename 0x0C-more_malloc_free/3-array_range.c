@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * array_range - Creates an array of integers ordered from min to max, inclusive.
+ * array_range - Creates an array of integers ordered from min to max.
  * @min: The first value of the array.
  * @max: Tha last value of the array.
  *
@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 	size = max - min + 1;
 
 	array = malloc(sizeof(int) * size);
-	
+
 	if (array == NULL)
 		return (NULL);
 
