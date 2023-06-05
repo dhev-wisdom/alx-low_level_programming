@@ -6,19 +6,18 @@
  * main - Entry point
  * @argc: argument count
  * @argv: List of argument strings
- * Return: 0 on Success, 1 on Failure
+ * Return: 0 on Success, 98 on Failure
  */
 
 int main(int argc, char *argv[])
 {
 	int i;
 	int j;
-	int isNumber = 1;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 
 	for (i = 1; i < argc; i++)
@@ -27,19 +26,13 @@ int main(int argc, char *argv[])
 		{
 			if (!isdigit(argv[i][j]))
 			{
-				isNumber = 0;
 				printf("Error\n");
-				return (1);
+				return (98);
 			}
 		}
 	}
 
-	if (isNumber == 1)
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	}
-	else
-		exit(98);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
 	return (0);
 }
