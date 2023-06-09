@@ -19,10 +19,12 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		return (-1);
 
-	ptr = fopen(filename, "a+");
+	ptr = fopen(filename, "r");
 	if (ptr == NULL)
 		return (-1);
+	fclose(ptr);
 
+	ptr = fopen(filename, "a");
 	fprintf(ptr, "%s", text_content);
 	fclose(ptr);
 
