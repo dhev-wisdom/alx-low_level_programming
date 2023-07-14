@@ -4,7 +4,7 @@
 /**
  * free_dog - Frees dog
  * dog_t: Typedef of struct dog
- * d: The dog to free
+ * @d: The dog to free
  */
 
 void free_dog(dog_t *d)
